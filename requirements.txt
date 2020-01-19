@@ -18,7 +18,7 @@ incremental==17.5.0
 kiwisolver==1.0.1
 lxml==4.3.2
 matplotlib==3.0.3
-nltk==3.4
+nltk==3.4.5
 numpy==1.16.2
 pandas==0.24.1
 parsel==1.5.1
