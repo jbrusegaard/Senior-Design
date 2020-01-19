@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+		<title>Breach List</title>
+	</head>
+	<body>
+		<header>
+			Breach List
+		</header>
+		<section>
+			<form action="/" method="post">
+				{% csrf_token %}
+				<table>
+					<tr>
+						<td>Breach #</td>
+						<td>URL</td>
+						<td>Confidence</td>
+						<td>Action</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><a href={{context.0.ScrapyRedirectURL}}>{{context.0.ScrapyRedirectURL}}</a></td>
+						<td>{{context.0.ConfidenceValue}}</td>
+						<td>
+							<select name="{{context.0.id}}">
+								<option value="unchanged">Unchanged</option>
+								<option value="breach">Breach</option>
+								<option value="nonbreach">Non-Breach</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href={{context.1.ScrapyRedirectURL}}>{{context.1.ScrapyRedirectURL}}</a></td>
+						<td>{{context.1.ConfidenceValue}}</td>
+						<td>
+							<select name="{{context.1.id}}">
+								<option value="unchanged">Unchanged</option>
+								<option value="breach">Breach</option>
+								<option value="nonbreach">Non-Breach</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href={{context.2.ScrapyRedirectURL}}>{{context.2.ScrapyRedirectURL}}</a></td>
+						<td>{{context.2.ConfidenceValue}}</td>
+						<td>
+							<select name="{{context.2.id}}">
+								<option value="unchanged">Unchanged</option>
+								<option value="breach">Breach</option>
+								<option value="nonbreach">Non-Breach</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><a href={{context.3.ScrapyRedirectURL}}>{{context.3.ScrapyRedirectURL}}</a></td>
+						<td>{{context.3.ConfidenceValue}}</td>
+						<td>
+							<select name="{{context.3.id}}">
+								<option value="unchanged">Unchanged</option>
+								<option value="breach">Breach</option>
+								<option value="nonbreach">Non-Breach</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href={{context.4.ScrapyRedirectURL}}>{{context.4.ScrapyRedirectURL}}</a></td>
+						<td>{{context.4.ConfidenceValue}}</td>
+						<td>
+							<select name="{{context.4.id}}">
+								<option value="unchanged">Unchanged</option>
+								<option value="breach">Breach</option>
+								<option value="nonbreach">Non-Breach</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<input type="submit" class="button" value="Submit">
+			</form>
+		</section>
+		<footer>
+			Crawling for Data Breach Reports<br>
+			A Senior Design Project by SDDEC19-01 at Iowa State University<br>
+			Alec Lones, Jeremiah Brusegaard, Mark Schwartz, Nolan Kim
+		</footer>
+	</body>
+</html>

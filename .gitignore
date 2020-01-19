@@ -1,0 +1,10 @@
+.idea/
+*/venv/
+*/__pycache__/
+*.pyc
+.idea/workspace.xml
+breachSpider/.scrapy/
+.DS_Store
+breachSpider/breachSpider/machineLearning/__pycache__/
+breachSpider/spiders/__pycache__/
+breachSpider/nltk_data

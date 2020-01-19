@@ -1,0 +1,18 @@
+Data Split Seed = 1324640185
+Num estimators: 100
+Num features: 13400
+Accuracy Score: 98.79%
+Matthews Correlation Coefficient: 0.9543146864954255
+[[623   3]
+ [  6 112]]
+Report: 
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       626
+           1       0.97      0.95      0.96       118
+
+   micro avg       0.99      0.99      0.99       744
+   macro avg       0.98      0.97      0.98       744
+weighted avg       0.99      0.99      0.99       744
+
+Test Split 0.25

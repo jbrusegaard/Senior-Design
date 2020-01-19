@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+  echo Must pass in start url;
+  echo Usage: breachCrawler \<start_url\>;
+  exit -1
+fi
+echo 'Moving to /home/team1/sdMaster/sddec19-01/breachSpider'
+cd /home/team1/sdMaster/sddec19-01/breachSpider || echo 'Could not find the directory where scrapy.cfg lives default is /home/team1/sdMaster/sddec19-01/breachSpider'
+echo "Starting breach crawler"
+scrapy crawl breachCrawler -a start_url="$1"

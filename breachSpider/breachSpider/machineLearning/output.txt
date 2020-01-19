@@ -1,0 +1,73 @@
+Test split = 0.25
+Num estimators: 100
+Num features: 13400
+Accuracy Score: 98.79%
+Matthews Correlation Coefficient: 0.9543146864954255
+Report: 
+              precision    recall  f1-score   support
+
+           0       0.99      1.00      0.99       626
+           1       0.97      0.95      0.96       118
+
+   micro avg       0.99      0.99      0.99       744
+   macro avg       0.98      0.97      0.98       744
+weighted avg       0.99      0.99      0.99       744
+
+Top 25 Vectorized words:
+1.) ('the', 196589)
+2.) ('to', 114137)
+3.) ('be', 106831)
+4.) ('of', 90211)
+5.) ('and', 84981)
+6.) ('in', 67163)
+7.) ('it', 58038)
+8.) ('that', 43565)
+9.) ('for', 39024)
+10.) ('on', 35302)
+11.) ('have', 32913)
+12.) ('with', 28955)
+13.) ('best', 28274)
+14.) ('at', 27898)
+15.) ('you', 27784)
+16.) ('say', 23611)
+17.) ('this', 22087)
+18.) ('security', 21429)
+19.) ('by', 20795)
+20.) ('from', 20666)
+21.) ('do', 18977)
+22.) ('2019', 18967)
+23.) ('all', 18615)
+24.) ('an', 17390)
+25.) ('service', 16452)
+
+Word             Importance
+-------------  ------------
+breach           0.0733674
+security         0.0630007
+attack           0.0547639
+hack             0.0388465
+malware          0.0257575
+cybersecurity    0.0251587
+hacker           0.0210429
+victim           0.0194853
+compromise       0.0172523
+and              0.0132466
+target           0.010113
+campaign         0.00987343
+hacking          0.0074539
+vulnerability    0.00675066
+ransomware       0.0066751
+email            0.00543233
+cloud            0.00528485
+expose           0.0048929
+incident         0.00466498
+trojan           0.00448089
+marriott         0.00437801
+cyberattack      0.00393793
+steal            0.00383664
+technology       0.00378104
+can              0.00347247
+
+[[623   3]
+ [  6 112]]
+Enter a webpage: 
